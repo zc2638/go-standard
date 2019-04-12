@@ -30,6 +30,7 @@ const (
 
 const FilePath = "testdata/test.tar"
 
+// 实现了tar格式压缩文件的存取
 func main() {
 
 	// 写tar文件数据流

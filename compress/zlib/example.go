@@ -11,6 +11,7 @@ import (
 
 const FilePath = "testdata/test.zlib"
 
+// zlib包实现了对zlib格式压缩数据的读写
 func main() {
 
 	// 写zlib数据流

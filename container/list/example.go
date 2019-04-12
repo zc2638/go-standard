@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-// 实现双向链表
+// list包实现双向链表
 func main() {
 
 	// 初始化链表

@@ -14,6 +14,7 @@ import (
 
 const FilePath = "testdata/test.gzip"
 
+// gzip包实现了gzip格式压缩文件的读写
 func main() {
 
 	// 写gzip数据流

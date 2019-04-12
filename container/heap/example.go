@@ -2,7 +2,7 @@ package main
 
 import "container/heap"
 
-// 对任意类型（实现了heap.Interface接口）的堆操作
+// heap包实现了对任意类型（实现了heap.Interface接口）的堆操作
 func main() {
 
 	// 初始化结构体

@@ -5,6 +5,7 @@ import (
 	"time"
 )
 
+// Context包定义了上下文类型
 func main() {
 
 	// 返回一个不是nil的空的Context。当不清楚使用哪个Context或者不可用时（因为功能尚未扩展到接受Context参数）。

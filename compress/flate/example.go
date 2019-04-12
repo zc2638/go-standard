@@ -12,6 +12,7 @@ import (
 const FilePath = "testdata/test.deflate"
 const DictFilePath = "testdata/testDict.deflate"
 
+// flate包实现了deflate压缩数据格式。gzip包和zlib包实现了对基于deflate的文件格式的访问
 func main() {
 
 	// 写deflate数据流

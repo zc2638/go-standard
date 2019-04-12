@@ -10,6 +10,7 @@ import (
 
 const FilePath = "testdata/test.bz2"
 
+// bzip2包实现bzip2的解压缩
 func main() {
 
 	// 读取文件内容

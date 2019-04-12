@@ -13,6 +13,7 @@ import (
 
 const FilePath = "testdata/bufio"
 
+// bufio包实现了有缓冲的I/O
 func main() {
 	// 缓冲区写入
 	buf := write()

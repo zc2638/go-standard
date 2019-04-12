@@ -1,4 +1,6 @@
-# go-standard
+# go-standard 
+![Go](testdata/img/go.png)
+
 Go标准库所有使用方法例子，请注意这不是Go的中文版标准库
 
 ## 简介

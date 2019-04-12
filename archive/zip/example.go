@@ -13,6 +13,7 @@ import (
 
 const FilePath = "testdata/test.zip"
 
+// 实现了zip档案文件的读写
 func main() {
 	// 写zip文件数据流
 	buf := write()
