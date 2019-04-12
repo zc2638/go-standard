@@ -38,5 +38,5 @@ Go标准库所有使用方法例子，请注意这不是Go的中文版标准库
 
 ### 参考
 
-- <a href="http://www.php.cn/manual/view/35126.html" target="_blank">中文版标准库文档</a>
-- <a href="https://github.com/taigacute/GoDoc-CN" target="_blank">中文版标准库文档(Dash版)</a>
+- [**中文版标准库文档**](https://studygolang.com/pkgdoc) | [**中文版标准库文档2**](http://www.php.cn/manual/view/35126.html)
+- [**中文版标准库文档(Dash版)**](https://github.com/taigacute/GoDoc-CN)
