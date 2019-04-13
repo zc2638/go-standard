@@ -32,8 +32,9 @@ Go标准库所有使用方法例子，请注意这不是Go的中文版标准库
 - [**plugin**](https://github.com/zc2638/go-standard/tree/master/plugin) &emsp;&emsp;&emsp;&emsp;&emsp; 插件生成和加载
 - [**reflect**](https://github.com/zc2638/go-standard/tree/master/reflect) &emsp;&emsp;&emsp;&emsp;&emsp; 反射操作任意类型对象
 - [**regexp**](https://github.com/zc2638/go-standard/tree/master/regexp) &emsp;&emsp;&emsp;&emsp;&emsp;正则表达式
-- [**sort**](https://github.com/zc2638/go-standard/tree/master/sort) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 排序切片和用户自定义数据集
-- [**strconv**](https://github.com/zc2638/go-standard/tree/master/strconv) &emsp;&emsp;&emsp;&emsp;&ensp;基本数据类型和其字符串类型的相互转换
+- [**rutime**](https://github.com/zc2638/go-standard/tree/master/runtime) &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;提供和go运行时环境的互操作，如控制go程的函数
+- [**sort**](https://github.com/zc2638/go-standard/tree/master/sort) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;排序切片和用户自定义数据集
+- [**strconv**](https://github.com/zc2638/go-standard/tree/master/strconv) &emsp;&emsp;&emsp;&emsp;&ensp; 基本数据类型和其字符串类型的相互转换
 - [**strings**](https://github.com/zc2638/go-standard/tree/master/strings) &emsp;&emsp;&emsp;&emsp;&emsp;操作字符串
 - [**sync**](https://github.com/zc2638/go-standard/tree/master/sync) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;提供了基本的同步基元，如互斥锁
 - [**text**](https://github.com/zc2638/go-standard/tree/master/text) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;文本操作
