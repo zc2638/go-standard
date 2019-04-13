@@ -34,6 +34,7 @@ Go标准库所有使用方法例子，请注意这不是Go的中文版标准库
 - [**strconv**](https://github.com/zc2638/go-standard/tree/master/strconv) &emsp;&emsp;&emsp;&emsp;&ensp;基本数据类型和其字符串类型的相互转换
 - [**strings**](https://github.com/zc2638/go-standard/tree/master/strings) &emsp;&emsp;&emsp;&emsp;&emsp;操作字符串
 - [**sync**](https://github.com/zc2638/go-standard/tree/master/sync) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;提供了基本的同步基元，如互斥锁
+- [**text**](https://github.com/zc2638/go-standard/tree/master/text) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;文本操作
 - [**time**](https://github.com/zc2638/go-standard/tree/master/time) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 时间操作
 - [**unicode**](https://github.com/zc2638/go-standard/tree/master/unicode) &emsp;&emsp;&emsp;&emsp;&ensp;unicode操作
 - [**unsafe**](https://github.com/zc2638/go-standard/tree/master/unsafe) &emsp;&emsp;&emsp;&emsp;&emsp;提供了一些跳过go语言类型安全限制的操作
