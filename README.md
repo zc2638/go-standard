@@ -20,10 +20,12 @@ Go标准库所有使用方法例子，请注意这不是Go的中文版标准库
 - [**fmt**](https://github.com/zc2638/go-standard/tree/master/fmt) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; 格式化I/O
 - [**hash**](https://github.com/zc2638/go-standard/tree/master/hash) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;提供hash函数的接口
 - [**html**](https://github.com/zc2638/go-standard/tree/master/html) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 转义和解转义HTML文本
+- [**image**](https://github.com/zc2638/go-standard/tree/master/image) &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;实现了基本的2D图片库
 - [**index/suffixarray**](https://github.com/zc2638/go-standard/tree/master/index/suffixarray) &ensp;使用内存后缀数组以对数时间实现子字符串搜索
 - [**io**](https://github.com/zc2638/go-standard/tree/master/io) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; I/O操作
 - [**log**](https://github.com/zc2638/go-standard/tree/master/log) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;简单的日志服务
 - [**math**](https://github.com/zc2638/go-standard/tree/master/math) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;基本的数学常数和数学函数
+- [**mime**](https://github.com/zc2638/go-standard/tree/master/mime) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;实现了MIME的部分规定
 - [**net**](https://github.com/zc2638/go-standard/tree/master/net) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;提供了可移植的网络I/O接口，包括TCP/IP、UDP、域名解析和Unix域socket
 - [**os**](https://github.com/zc2638/go-standard/tree/master/os) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 操作系统函数
 - [**path**](https://github.com/zc2638/go-standard/tree/master/path) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 对斜杠分隔的路径的实用操作
