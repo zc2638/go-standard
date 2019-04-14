@@ -45,6 +45,9 @@ func main() {
 	// 服务端创建
 	exampleServer()
 
+	// 服务器监听返回html内容
+	exampleServerHtml()
+
 	// transport代理
 	exampleTransport()
 }
@@ -600,6 +603,17 @@ func exampleServer() {
 	if err := srv.Close(); err != nil {
 		log.Fatal(err)
 	}
+}
+
+func exampleServerHtml() {
+
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+
+		w.Header().Set("Content-Type", "text/html; charset=utf-8")
+		w.Write([]byte("<p>Hello World!</p>"))
+	})
+
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
 func exampleTransport() {
