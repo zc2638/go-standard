@@ -3,6 +3,11 @@
 
 Go标准库所有使用方法例子，请注意这不是Go的中文版标准库
 
+## 安装
+```
+go get github.com/zc2638/gosl
+```
+
 ## 简介
 
 - [**archive**](https://github.com/zc2638/go-standard/tree/master/src/archive) &emsp;&emsp;&emsp;&emsp; tar/zip压缩操作
