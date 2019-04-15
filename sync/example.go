@@ -10,11 +10,18 @@ import (
 // 本包的类型的值不应被拷贝
 func main() {
 
+	// 协程同步
 	exampleWaitGroup()
+	// 协程中只调用单次方法
 	exampleOnce()
+	// 利用互斥锁进行线程操作
 	exampleCond()
+	// 资源池
 	examplePool()
+	// 并发读写互斥锁
 	exampleRWMutex()
+	// 并发map
+	exampleMap()
 }
 
 func exampleWaitGroup() {
@@ -141,4 +148,27 @@ func exampleRWMutex() {
 
 	// 返回一个互斥锁，通过调用rw.Rlock和rw.Runlock实现了Locker接口
 	rw.RLocker()
+}
+
+func exampleMap() {
+
+	// 声明并发Map
+	var m sync.Map
+
+	// 将键值对保存到sync.Map
+	m.Store("a", "Hello World!")
+	m.Store("b", "Hello Gopher!")
+	m.Store("c", "Hello zc!")
+
+	// 从sync.Map中根据键取值
+	fmt.Println(m.Load("c"))
+
+	// 根据键删除对应的键值对
+	m.Delete("c")
+
+	// 遍历所有sync.Map中的键值对
+	m.Range(func(k, v interface{}) bool {
+		fmt.Println("iterate:", k, v)
+		return true
+	})
 }
