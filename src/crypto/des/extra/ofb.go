@@ -1,18 +1,26 @@
-package mode
+package extra
 
 import (
 	"bytes"
 	"crypto/aes"
 	"crypto/cipher"
+	"crypto/des"
 	"io"
 	"io/ioutil"
 	"log"
 )
 
-func OFBEncrypt(originText, key, iv []byte) ([]byte, error) {
+func OFBEncrypt(originText, key, iv []byte, triple bool) ([]byte, error) {
 
-	// 创建一个cipher.Block。参数key为密钥，长度只能是16、24、32字节，用以选择AES-128、AES-192、AES-256
-	block, err := aes.NewCipher(key)
+	var block cipher.Block
+	var err error
+	if triple {
+		// 创建一个cipher.Block。参数key为24字节密钥
+		block, err = des.NewTripleDESCipher(key)
+	} else {
+		// 创建一个cipher.Block。参数key为8字节密钥
+		block, err = des.NewCipher(key)
+	}
 	if err != nil {
 		return nil, err
 	}
@@ -30,10 +38,17 @@ func OFBEncrypt(originText, key, iv []byte) ([]byte, error) {
 	return cipherText, nil
 }
 
-func OFBDecrypt(cipherText, key, iv []byte) ([]byte, error) {
+func OFBDecrypt(cipherText, key, iv []byte, triple bool) ([]byte, error) {
 
-	// 创建一个cipher.Block。参数key为密钥，长度只能是16、24、32字节，用以选择AES-128、AES-192、AES-256
-	block, err := aes.NewCipher(key)
+	var block cipher.Block
+	var err error
+	if triple {
+		// 创建一个cipher.Block。参数key为24字节密钥
+		block, err = des.NewTripleDESCipher(key)
+	} else {
+		// 创建一个cipher.Block。参数key为8字节密钥
+		block, err = des.NewCipher(key)
+	}
 	if err != nil {
 		return nil, err
 	}
@@ -50,10 +65,17 @@ func OFBDecrypt(cipherText, key, iv []byte) ([]byte, error) {
 	return cipherText, nil
 }
 
-func OFBEncryptStreamReader(originText, key, iv []byte) ([]byte, error) {
+func OFBEncryptStreamReader(originText, key, iv []byte, triple bool) ([]byte, error) {
 
-	// 创建一个cipher.Block。参数key为密钥，长度只能是16、24、32字节，用以选择AES-128、AES-192、AES-256
-	block, err := aes.NewCipher(key)
+	var block cipher.Block
+	var err error
+	if triple {
+		// 创建一个cipher.Block。参数key为24字节密钥
+		block, err = des.NewTripleDESCipher(key)
+	} else {
+		// 创建一个cipher.Block。参数key为8字节密钥
+		block, err = des.NewCipher(key)
+	}
 	if err != nil {
 		return nil, err
 	}
@@ -70,10 +92,17 @@ func OFBEncryptStreamReader(originText, key, iv []byte) ([]byte, error) {
 	return ioutil.ReadAll(reader)
 }
 
-func OFBDecryptStreamWriter(cipherText, key, iv []byte) ([]byte, error) {
+func OFBDecryptStreamWriter(cipherText, key, iv []byte, triple bool) ([]byte, error) {
 
-	// 创建一个cipher.Block。参数key为密钥，长度只能是16、24、32字节，用以选择AES-128、AES-192、AES-256
-	block, err := aes.NewCipher(key)
+	var block cipher.Block
+	var err error
+	if triple {
+		// 创建一个cipher.Block。参数key为24字节密钥
+		block, err = des.NewTripleDESCipher(key)
+	} else {
+		// 创建一个cipher.Block。参数key为8字节密钥
+		block, err = des.NewCipher(key)
+	}
 	if err != nil {
 		return nil, err
 	}

@@ -7,7 +7,7 @@ import (
 	"encoding/base64"
 	"encoding/pem"
 	"fmt"
-	"github.com/zc2638/go-standard/crypto/rsa/demo"
+	"github.com/zc2638/go-standard/crypto/rsa/extra"
 	"io/ioutil"
 	"log"
 	"os"
@@ -175,7 +175,7 @@ func rsaPKCS1v15Demo() {
 	var origin = []byte("Hello World!")
 
 	// rsa公钥加密
-	cipherText, err := demo.Encrypt(publicKey, origin)
+	cipherText, err := extra.Encrypt(publicKey, origin)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -185,7 +185,7 @@ func rsaPKCS1v15Demo() {
 	fmt.Println("RSA-PKCS1v15加密内容: ", cipherTextStr)
 
 	// rsa私钥解密
-	originText, err := demo.Decrypt(privateKey, cipherText)
+	originText, err := extra.Decrypt(privateKey, cipherText)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -207,7 +207,7 @@ func rsaOAEPDemo() {
 	var label = []byte("test")
 
 	// rsa公钥加密
-	cipherText, err := demo.EncryptOAEP(publicKey, origin, label)
+	cipherText, err := extra.EncryptOAEP(publicKey, origin, label)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -217,7 +217,7 @@ func rsaOAEPDemo() {
 	fmt.Println("RSA-OAEP加密内容: ", cipherTextStr)
 
 	// rsa私钥解密
-	originText, err := demo.DecryptOAEP(privateKey, cipherText, label)
+	originText, err := extra.DecryptOAEP(privateKey, cipherText, label)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -236,7 +236,7 @@ func rsaSignatureDemo() {
 	var origin = []byte("Hello World!")
 
 	// rsa私钥签名
-	signature, err := demo.Sign(privateKey, origin)
+	signature, err := extra.Sign(privateKey, origin)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -246,7 +246,7 @@ func rsaSignatureDemo() {
 	fmt.Println("RSA签名内容: ", signatureStr)
 
 	//rsa公钥验签
-	err = demo.Verify(publicKey, origin, signature)
+	err = extra.Verify(publicKey, origin, signature)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -275,7 +275,7 @@ func rsaSignPassDemo() {
 	//
 
 	// rsa私钥签名
-	signature, err := demo.SignPass(privateKey, origin, &SignOpts)
+	signature, err := extra.SignPass(privateKey, origin, &SignOpts)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -285,7 +285,7 @@ func rsaSignPassDemo() {
 	fmt.Println("RSA-PASS签名内容: ", signatureStr)
 
 	//rsa公钥验签
-	err = demo.VerifyPass(publicKey, origin, signature, &VerifyOpts)
+	err = extra.VerifyPass(publicKey, origin, signature, &VerifyOpts)
 	if err != nil {
 		log.Fatal(err)
 	}

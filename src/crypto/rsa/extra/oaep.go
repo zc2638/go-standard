@@ -1,4 +1,4 @@
-package demo
+package extra
 
 import (
 	"crypto/rand"

@@ -1,4 +1,4 @@
-package mode
+package extra
 
 import (
 	"crypto/aes"

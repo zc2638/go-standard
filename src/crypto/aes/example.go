@@ -5,7 +5,7 @@ import (
 	"encoding/base64"
 	"encoding/hex"
 	"fmt"
-	"github.com/zc2638/go-standard/crypto/aes/mode"
+	"github.com/zc2638/go-standard/crypto/aes/extra"
 	"io"
 	"log"
 )
@@ -37,7 +37,7 @@ func CBC() {
 	var iv = []byte("example iv tests")
 
 	// 加密
-	cipherText, err := mode.CBCEncrypt(origin, key, iv)
+	cipherText, err := extra.CBCEncrypt(origin, key, iv)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -47,7 +47,7 @@ func CBC() {
 	fmt.Println("AES-CBC加密内容: ", cipherTextStr)
 
 	// 解密
-	originText, err := mode.CBCDecrypt(cipherText, key, iv)
+	originText, err := extra.CBCDecrypt(cipherText, key, iv)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -69,7 +69,7 @@ func GCM() {
 	}
 
 	// 加密
-	cipherText, err := mode.GCMEncrypt(origin, key, nonce)
+	cipherText, err := extra.GCMEncrypt(origin, key, nonce)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -79,7 +79,7 @@ func GCM() {
 	fmt.Println("AES-GCM加密内容: ", cipherTextStr)
 
 	// 解密
-	originText, err := mode.GCMDecrypt(cipherText, key, nonce)
+	originText, err := extra.GCMDecrypt(cipherText, key, nonce)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -96,7 +96,7 @@ func CFB() {
 	var iv = []byte("example iv tests")
 
 	// 加密
-	cipherText, err := mode.CFBEncrypt(origin, key, iv)
+	cipherText, err := extra.CFBEncrypt(origin, key, iv)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -106,7 +106,7 @@ func CFB() {
 	fmt.Println("AES-CFB加密内容: ", cipherTextStr)
 
 	// 解密
-	originText, err := mode.CFBDecrypt(cipherText, key, iv)
+	originText, err := extra.CFBDecrypt(cipherText, key, iv)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -123,7 +123,7 @@ func CTR() {
 	var iv = []byte("example iv tests")
 
 	// 加密
-	cipherText, err := mode.CTREncrypt(origin, key, iv)
+	cipherText, err := extra.CTREncrypt(origin, key, iv)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -133,7 +133,7 @@ func CTR() {
 	fmt.Println("AES-CTR加密内容: ", cipherTextStr)
 
 	// 解密
-	originText, err := mode.CTRDecrypt(cipherText, key, iv)
+	originText, err := extra.CTRDecrypt(cipherText, key, iv)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -150,7 +150,7 @@ func OFB() {
 	var iv = []byte("example iv tests")
 
 	// 加密
-	cipherText, err := mode.OFBEncrypt(origin, key, iv)
+	cipherText, err := extra.OFBEncrypt(origin, key, iv)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -160,7 +160,7 @@ func OFB() {
 	fmt.Println("AES-OFB加密内容: ", cipherTextStr)
 
 	// 解密
-	originText, err := mode.OFBDecrypt(cipherText, key, iv)
+	originText, err := extra.OFBDecrypt(cipherText, key, iv)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -177,7 +177,7 @@ func OFBStream() {
 	var iv = []byte("example iv tests")
 
 	// StreamReader方式加密
-	cipherText, err := mode.OFBEncryptStreamReader(origin, key, iv)
+	cipherText, err := extra.OFBEncryptStreamReader(origin, key, iv)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -187,7 +187,7 @@ func OFBStream() {
 	fmt.Println("AES-OFB-Stream方式加密内容: ", cipherTextStr)
 
 	// StreamWriter方式解密
-	originText, err := mode.OFBDecryptStreamWriter(cipherText, key, iv)
+	originText, err := extra.OFBDecryptStreamWriter(cipherText, key, iv)
 	if err != nil {
 		log.Fatal(err)
 	}

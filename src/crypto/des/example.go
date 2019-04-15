@@ -4,7 +4,7 @@ import (
 	"encoding/base64"
 	"encoding/hex"
 	"fmt"
-	"github.com/zc2638/go-standard/crypto/des/mode"
+	"github.com/zc2638/go-standard/crypto/des/extra"
 	"log"
 )
 
@@ -39,7 +39,7 @@ func CBC() {
 	var iv = []byte("test ivs")
 
 	// 加密
-	cipherText, err := mode.CBCEncrypt(origin, key, iv, false)
+	cipherText, err := extra.CBCEncrypt(origin, key, iv, false)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -49,7 +49,7 @@ func CBC() {
 	fmt.Println("DES-CBC加密内容: ", cipherTextStr)
 
 	// 解密
-	originText, err := mode.CBCDecrypt(cipherText, key, iv, false)
+	originText, err := extra.CBCDecrypt(cipherText, key, iv, false)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -66,7 +66,7 @@ func CFB() {
 	var iv = []byte("iv tests")
 
 	// 加密
-	cipherText, err := mode.CFBEncrypt(origin, key, iv, false)
+	cipherText, err := extra.CFBEncrypt(origin, key, iv, false)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -76,7 +76,7 @@ func CFB() {
 	fmt.Println("DES-CFB加密内容: ", cipherTextStr)
 
 	// 解密
-	originText, err := mode.CFBDecrypt(cipherText, key, iv, false)
+	originText, err := extra.CFBDecrypt(cipherText, key, iv, false)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -93,7 +93,7 @@ func CTR() {
 	var iv = []byte("iv tests")
 
 	// 加密
-	cipherText, err := mode.CTREncrypt(origin, key, iv, false)
+	cipherText, err := extra.CTREncrypt(origin, key, iv, false)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -103,7 +103,7 @@ func CTR() {
 	fmt.Println("DES-CTR加密内容: ", cipherTextStr)
 
 	// 解密
-	originText, err := mode.CTRDecrypt(cipherText, key, iv, false)
+	originText, err := extra.CTRDecrypt(cipherText, key, iv, false)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -120,7 +120,7 @@ func OFB() {
 	var iv = []byte("iv tests")
 
 	// 加密
-	cipherText, err := mode.OFBEncrypt(origin, key, iv, false)
+	cipherText, err := extra.OFBEncrypt(origin, key, iv, false)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -130,7 +130,7 @@ func OFB() {
 	fmt.Println("DES-OFB加密内容: ", cipherTextStr)
 
 	// 解密
-	originText, err := mode.OFBDecrypt(cipherText, key, iv, false)
+	originText, err := extra.OFBDecrypt(cipherText, key, iv, false)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -147,7 +147,7 @@ func OFBStream() {
 	var iv = []byte("iv tests")
 
 	// StreamReader方式加密
-	cipherText, err := mode.OFBEncryptStreamReader(origin, key, iv, false)
+	cipherText, err := extra.OFBEncryptStreamReader(origin, key, iv, false)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -157,7 +157,7 @@ func OFBStream() {
 	fmt.Println("DES-OFB-Stream方式加密内容: ", cipherTextStr)
 
 	// StreamWriter方式解密
-	originText, err := mode.OFBDecryptStreamWriter(cipherText, key, iv, false)
+	originText, err := extra.OFBDecryptStreamWriter(cipherText, key, iv, false)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -174,7 +174,7 @@ func CBCTriple() {
 	var iv = []byte("test ivs")
 
 	// 加密
-	cipherText, err := mode.CBCEncrypt(origin, key, iv, true)
+	cipherText, err := extra.CBCEncrypt(origin, key, iv, true)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -184,7 +184,7 @@ func CBCTriple() {
 	fmt.Println("DES-CBC-Triple加密内容: ", cipherTextStr)
 
 	// 解密
-	originText, err := mode.CBCDecrypt(cipherText, key, iv, true)
+	originText, err := extra.CBCDecrypt(cipherText, key, iv, true)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -201,7 +201,7 @@ func CFBTriple() {
 	var iv = []byte("iv tests")
 
 	// 加密
-	cipherText, err := mode.CFBEncrypt(origin, key, iv, true)
+	cipherText, err := extra.CFBEncrypt(origin, key, iv, true)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -211,7 +211,7 @@ func CFBTriple() {
 	fmt.Println("DES-CFB-Triple加密内容: ", cipherTextStr)
 
 	// 解密
-	originText, err := mode.CFBDecrypt(cipherText, key, iv, true)
+	originText, err := extra.CFBDecrypt(cipherText, key, iv, true)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -228,7 +228,7 @@ func CTRTriple() {
 	var iv = []byte("iv tests")
 
 	// 加密
-	cipherText, err := mode.CTREncrypt(origin, key, iv, true)
+	cipherText, err := extra.CTREncrypt(origin, key, iv, true)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -238,7 +238,7 @@ func CTRTriple() {
 	fmt.Println("DES-CTR-Triple加密内容: ", cipherTextStr)
 
 	// 解密
-	originText, err := mode.CTRDecrypt(cipherText, key, iv, true)
+	originText, err := extra.CTRDecrypt(cipherText, key, iv, true)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -255,7 +255,7 @@ func OFBTriple() {
 	var iv = []byte("iv tests")
 
 	// 加密
-	cipherText, err := mode.OFBEncrypt(origin, key, iv, true)
+	cipherText, err := extra.OFBEncrypt(origin, key, iv, true)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -265,7 +265,7 @@ func OFBTriple() {
 	fmt.Println("DES-OFB-Triple加密内容: ", cipherTextStr)
 
 	// 解密
-	originText, err := mode.OFBDecrypt(cipherText, key, iv, true)
+	originText, err := extra.OFBDecrypt(cipherText, key, iv, true)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -282,7 +282,7 @@ func OFBStreamTriple() {
 	var iv = []byte("iv tests")
 
 	// StreamReader方式加密
-	cipherText, err := mode.OFBEncryptStreamReader(origin, key, iv, true)
+	cipherText, err := extra.OFBEncryptStreamReader(origin, key, iv, true)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -292,7 +292,7 @@ func OFBStreamTriple() {
 	fmt.Println("DES-OFB-Triple-Stream方式加密内容: ", cipherTextStr)
 
 	// StreamWriter方式解密
-	originText, err := mode.OFBDecryptStreamWriter(cipherText, key, iv, true)
+	originText, err := extra.OFBDecryptStreamWriter(cipherText, key, iv, true)
 	if err != nil {
 		log.Fatal(err)
 	}
