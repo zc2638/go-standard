@@ -4,7 +4,7 @@ import (
 	"encoding/base64"
 	"encoding/hex"
 	"fmt"
-	"github.com/zc2638/go-standard/crypto/des/extra"
+	"github.com/zc2638/go-standard/src/crypto/des/extra"
 	"log"
 )
 
