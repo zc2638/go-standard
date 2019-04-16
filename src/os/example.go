@@ -27,6 +27,8 @@ func main() {
 	exampleEnv()
 	// 进程操作
 	exampleProcess()
+	// 获取命令行参数
+	exampleArgs()
 }
 
 const (
@@ -251,4 +253,12 @@ func exampleProcess() {
 	if err := p.Kill(); err != nil {
 		log.Fatal(err)
 	}
+}
+
+func exampleArgs() {
+
+	// 获取命令行参数
+	// 第一个参数是命令本身，所以从第二个开始截取
+	args := os.Args[1:]
+	fmt.Println(args)
 }
