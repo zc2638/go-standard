@@ -53,3 +53,4 @@ go get github.com/zc2638/gosl
 
 - [**中文版标准库文档**](https://studygolang.com/pkgdoc) | [**中文版标准库文档2**](http://www.php.cn/manual/view/35126.html)
 - [**中文版标准库文档(Dash版)**](https://github.com/taigacute/GoDoc-CN)
+- [**Mastering Go(玩转Go中文译本)**](github.com/hantmac/Mastering_Go_ZH_CN)
