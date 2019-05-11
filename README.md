@@ -29,6 +29,7 @@ gosl web
 - [**expvar**](https://github.com/zc2638/go-standard/tree/master/src/expvar) &emsp;&emsp;&emsp;&emsp;&emsp;公共变量
 - [**flag**](https://github.com/zc2638/go-standard/tree/master/src/flag) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;命令行参数解析
 - [**fmt**](https://github.com/zc2638/go-standard/tree/master/src/fmt) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; 格式化I/O
+- [**go**](https://github.com/zc2638/go-standard/tree/master/src/go) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GO常用命令
 - [**hash**](https://github.com/zc2638/go-standard/tree/master/src/hash) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;提供hash函数的接口
 - [**html**](https://github.com/zc2638/go-standard/tree/master/src/html) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 转义和解转义HTML文本
 - [**image**](https://github.com/zc2638/go-standard/tree/master/src/image) &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;实现了基本的2D图片库
