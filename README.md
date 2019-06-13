@@ -14,6 +14,16 @@ go get github.com/zc2638/gosl
 gosl web
 ```
 
+## Go Module代理
+设置环境变量(推荐)
+```
+GOPROXY=https://proxy.golang.org
+```
+或
+```
+GOPROXY=https://goproxy.io
+```
+
 ## 简介
 
 - [**archive**](https://github.com/zc2638/go-standard/tree/master/src/archive) &emsp;&emsp;&emsp;&emsp; tar/zip压缩操作
