@@ -15,13 +15,11 @@ gosl web
 ```
 
 ## Go Module代理
-设置环境变量(推荐)
+设置环境变量
 ```
-GOPROXY=https://proxy.golang.org
-```
-或
-```
-GOPROXY=https://goproxy.io
+GOPROXY=https://proxy.golang.org    # 官方推荐，国内还无法正常使用
+GOPROXY=https://goproxy.cn          # 国内相对友好
+GOPROXY=https://goproxy.io          # 通用
 ```
 
 ## 简介
