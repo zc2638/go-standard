@@ -5,14 +5,7 @@ Go标准库所有使用方法例子，请注意这不是Go的中文版标准库
 
 欢迎各位Gopher补充一些高级用法以及组合用法，在对应的包下创建extend文件夹，在extend文件夹下创建一个自己的example文件夹(必须包含example.go用于示例模拟调用, doc.go用于示例说明)，感谢！
 
-## 安装
-```
-go get github.com/zc2638/gosl
-```
-启动服务
-```
-gosl web
-```
+## [Uber编码规范](https://github.com/zc2638/go-standard/tree/master/style.md)
 
 ## Go Module代理
 设置环境变量
@@ -20,6 +13,15 @@ gosl web
 GOPROXY=https://proxy.golang.org    # 官方推荐，国内还无法正常使用
 GOPROXY=https://goproxy.cn          # 国内相对友好
 GOPROXY=https://goproxy.io          # 通用
+```
+
+## 安装
+```
+go get github.com/zc2638/gosl
+```
+启动服务
+```
+gosl web
 ```
 
 ## 简介
