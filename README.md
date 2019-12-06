@@ -1,5 +1,5 @@
 # go-standard 
-![Go](testdata/img/go.png)
+![Go](https://raw.githubusercontent.com/zc2638/material/master/go/go.png)
 
 Go标准库所有使用方法例子，请注意这不是Go的中文版标准库
 
@@ -63,6 +63,13 @@ gosl web
 - [**time**](https://github.com/zc2638/go-standard/tree/master/src/time) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 时间操作
 - [**unicode**](https://github.com/zc2638/go-standard/tree/master/src/unicode) &emsp;&emsp;&emsp;&emsp;&ensp;unicode操作
 - [**unsafe**](https://github.com/zc2638/go-standard/tree/master/src/unsafe) &emsp;&emsp;&emsp;&emsp;&emsp;提供了一些跳过go语言类型安全限制的操作
+
+### JetBrains 开源证书支持
+
+`go-standard` 项目一直以来都是在 JetBrains 公司旗下的 GoLand 集成开发环境中进行开发，基于 **free JetBrains Open Source license(s)** 正版免费授权，在此表达谢意。
+
+<a href="https://www.jetbrains.com/?from=go-standard" target="_blank"><img src="https://raw.githubusercontent.com/zc2638/material/master/jetbrains/jetbrains.png" width="250" align="middle"/></a>
+
 
 ### 参考
 
