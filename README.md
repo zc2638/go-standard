@@ -6,6 +6,7 @@ Go标准库所有使用方法例子，请注意这不是Go的中文版标准库
 欢迎各位Gopher补充一些高级用法以及组合用法，在对应的包下创建extend文件夹，在extend文件夹下创建一个自己的example文件夹(必须包含example.go用于示例模拟调用, doc.go用于示例说明)，感谢！
 
 ## [Uber编码规范](https://github.com/zc2638/go-standard/tree/master/style.md)
+## [OpenTracing链路追踪规范](https://github.com/opentracing-contrib/opentracing-specification-zh/blob/master/specification.md)
 
 ## Go Module代理
 设置环境变量
