@@ -45,7 +45,7 @@ gosl web
 - [**html**](https://github.com/zc2638/go-standard/tree/master/src/html) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 转义和解转义HTML文本
 - [**image**](https://github.com/zc2638/go-standard/tree/master/src/image) &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;实现了基本的2D图片库
 - [**index/suffixarray**](https://github.com/zc2638/go-standard/tree/master/src/index/suffixarray) &ensp;使用内存后缀数组以对数时间实现子字符串搜索
-- [**io**](https://github.com/zc2638/go-standard/tree/master/io) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; I/O操作
+- [**io**](https://github.com/zc2638/go-standard/tree/master/src/io) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; I/O操作
 - [**log**](https://github.com/zc2638/go-standard/tree/master/src/log) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;简单的日志服务
 - [**math**](https://github.com/zc2638/go-standard/tree/master/src/math) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;基本的数学常数和数学函数
 - [**mime**](https://github.com/zc2638/go-standard/tree/master/src/mime) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;实现了MIME的部分规定
