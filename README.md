@@ -5,7 +5,7 @@ Go常用规范定义，标准库方法使用示例，请注意这不是Go的中�
 
 欢迎各位Gopher补充一些高级用法以及组合用法，在对应的包下创建extend文件夹，在extend文件夹下创建一个自己的example文件夹(必须包含example.go用于示例模拟调用, doc.go用于示例说明)，感谢！
 
-## [Uber编码规范](https://github.com/zc2638/go-standard/tree/master/style.md)
+## [Uber编码规范](https://github.com/zc2638/go-standard/tree/master/doc/style.md)
 ## <a href="https://github.com/opentracing-contrib/opentracing-specification-zh/blob/master/specification.md" target="_blank">OpenTracing链路追踪规范</a>
 
 ## Go Module代理
@@ -64,6 +64,14 @@ gosl web
 - [**time**](https://github.com/zc2638/go-standard/tree/master/src/time) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 时间操作
 - [**unicode**](https://github.com/zc2638/go-standard/tree/master/src/unicode) &emsp;&emsp;&emsp;&emsp;&ensp;unicode操作
 - [**unsafe**](https://github.com/zc2638/go-standard/tree/master/src/unsafe) &emsp;&emsp;&emsp;&emsp;&emsp;提供了一些跳过go语言类型安全限制的操作
+
+### Tip
+channel作为参数
+```go
+chan int   // 可读可写
+<-chan int // 只读
+chan<- int // 只写
+```
 
 ### JetBrains 开源证书支持
 
