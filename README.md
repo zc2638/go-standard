@@ -1,4 +1,5 @@
-# go-standard 
+# go-standard
+
 ![Go](https://raw.githubusercontent.com/zc2638/material/master/go/go.png)
 
 Go常用规范定义，标准库方法使用示例，请注意这不是Go的中文版标准库
