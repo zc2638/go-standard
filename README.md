@@ -15,14 +15,8 @@ GOPROXY=https://goproxy.cn          # 国内相对友好
 GOPROXY=https://goproxy.io          # 通用
 ```
 
-## 安装
-```
-go get github.com/zc2638/gosl
-```
-启动服务
-```
-gosl web
-```
+## TODO
+Change to uint tests
 
 ## 简介
 
