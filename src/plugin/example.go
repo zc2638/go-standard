@@ -11,6 +11,7 @@ const PluginFile = "testdata/testPlugin.so"
 // 注意plugin的源码需要在main包中，否则无法编译
 func main() {
 
+	// 方法或者变量名必须以大写开头
 	// 编译go plugin只需要在go build的时候带上--buildmode=plugin即可。命令如下：
 	// go build --buildmode=plugin -o pluginHello.so pluginHello.go
 
@@ -22,7 +23,7 @@ func main() {
 
 	// 查找在插件 p 中搜索名为 symName 的符号
 	// 符号是任何导出的变量或函数，如果找不到该符号，它会报告错误。由多个 goroutines 并行使用是安全的
-	s, err := p.Lookup("test")
+	s, err := p.Lookup("Test")
 	if err != nil {
 		log.Fatal(err)
 	}
