@@ -4,6 +4,7 @@
 
 Go常用规范定义，标准库方法使用示例，请注意这不是Go的中文版标准库
 
+## [Golang 泛型](https://github.com/akutz/go-generics-the-hard-way)
 ## [Uber编码规范](https://github.com/zc2638/go-standard/tree/master/doc/style.md)
 ## <a href="https://github.com/opentracing-contrib/opentracing-specification-zh/blob/master/specification.md" target="_blank">OpenTracing链路追踪规范</a>
 
