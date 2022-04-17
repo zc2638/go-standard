@@ -11,9 +11,10 @@ Go常用规范定义，标准库方法使用示例，请注意这不是Go的中�
 ## Go Module代理
 设置环境变量
 ```
-GOPROXY=https://proxy.golang.org    # 官方推荐，国内还无法正常使用
-GOPROXY=https://goproxy.cn          # 国内相对友好
-GOPROXY=https://goproxy.io          # 通用
+GOPROXY=https://proxy.golang.org           # 官方推荐，国内还无法正常使用
+GOPROXY=https://mirrors.aliyun.com/goproxy # 阿里云
+GOPROXY=https://goproxy.cn                 # 国内相对友好
+GOPROXY=https://goproxy.io                 # 通用
 ```
 
 ## TODO
