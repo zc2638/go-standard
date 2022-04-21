@@ -18,7 +18,8 @@ GOPROXY=https://goproxy.io                 # 通用
 ```
 
 ## TODO
-Change to uint tests
+- 改写为单元测试
+- 更新到 `1.18+` 版本
 
 ## 简介
 
