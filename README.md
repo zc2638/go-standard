@@ -7,19 +7,17 @@ Go常用规范定义，标准库方法使用示例，请注意这不是Go的中�
 ## [Golang 泛型](https://github.com/akutz/go-generics-the-hard-way)
 ## [Golang 常见指令](./docs/instruction.md)
 ## [Uber编码规范](./docs/style.md)
-## <a href="https://github.com/opentracing-contrib/opentracing-specification-zh/blob/master/specification.md" target="_blank">OpenTracing链路追踪规范</a>
 
 ## Go Module代理
 设置环境变量
 ```
-GOPROXY=https://proxy.golang.org           # 官方推荐，国内还无法正常使用
-GOPROXY=https://mirrors.aliyun.com/goproxy # 阿里云
-GOPROXY=https://goproxy.cn                 # 国内相对友好
-GOPROXY=https://goproxy.io                 # 通用
+GOPROXY=https://proxy.golang.org           # 官方推荐，国内无法正常使用
+GOPROXY=https://proxy.golang.com.cn        # 全球通用
+GOPROXY=https://goproxy.cn                 # 国内友好
 ```
 
 ## TODO
-- 改写为单元测试
+- 改写为中文版pkg，支持常用第三方包
 - 更新到 `1.18+` 版本
 
 ## 简介
@@ -75,11 +73,3 @@ chan<- int // 只写
 `go-standard` 项目一直以来都是在 JetBrains 公司旗下的 GoLand 集成开发环境中进行开发，基于 **free JetBrains Open Source license(s)** 正版免费授权，在此表达谢意。
 
 <a href="https://www.jetbrains.com/?from=go-standard" target="_blank"><img src="https://raw.githubusercontent.com/zc2638/material/master/jetbrains/jetbrains.png" width="250" align="middle"/></a>
-
-
-### 参考
-
-- [**中文版标准库文档**](https://studygolang.com/pkgdoc) | [**中文版标准库文档2**](http://www.php.cn/manual/view/35126.html)
-- [**中文版标准库文档(Dash版)**](https://github.com/taigacute/GoDoc-CN)
-- [**《Go入门指南》**](https://github.com/unknwon/the-way-to-go_ZH_CN)
-- [**Mastering Go(玩转Go中文译本)**](https://github.com/hantmac/Mastering_Go_ZH_CN)
