@@ -4,5 +4,4 @@
 //
 // See "JSON and Go" for an introduction to this package:
 // https://golang.org/doc/articles/json_and_go.html
-
 package json

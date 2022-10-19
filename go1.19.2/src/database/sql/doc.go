@@ -9,5 +9,4 @@
 //
 // For usage examples, see the wiki page at
 // https://golang.org/s/sqlwiki.
-
 package sql

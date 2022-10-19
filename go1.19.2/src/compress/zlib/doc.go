@@ -5,15 +5,14 @@
 // and compress during writing.  For example, to write compressed data
 // to a buffer:
 //
-// 	 var b bytes.Buffer
-//	 w := zlib.NewWriter(&b)
-//	 w.Write([]byte("hello, world\n"))
-//	 w.Close()
+//	var b bytes.Buffer
+//	w := zlib.NewWriter(&b)
+//	w.Write([]byte("hello, world\n"))
+//	w.Close()
 //
 // and to read that data back:
-// 
-//	 r, err := zlib.NewReader(&b)
-//	 io.Copy(os.Stdout, r)
-//	 r.Close()
-
+//
+//	r, err := zlib.NewReader(&b)
+//	io.Copy(os.Stdout, r)
+//	r.Close()
 package zlib

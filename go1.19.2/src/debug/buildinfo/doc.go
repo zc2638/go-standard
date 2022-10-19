@@ -4,5 +4,4 @@
 //
 // Build information is available for the currently running binary in
 // runtime/debug.ReadBuildInfo.
-
 package buildinfo

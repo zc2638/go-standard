@@ -4,5 +4,4 @@
 //
 // DES is cryptographically broken and should not be used for secure
 // applications.
-
 package des

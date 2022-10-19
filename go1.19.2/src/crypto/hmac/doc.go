@@ -13,5 +13,4 @@
 //		 expectedMAC := mac.Sum(nil)
 //		 return hmac.Equal(messageMAC, expectedMAC)
 //	 }
-
 package hmac

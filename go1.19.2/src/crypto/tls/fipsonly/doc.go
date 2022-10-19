@@ -5,5 +5,4 @@
 //	import _ "crypto/tls/fipsonly"
 //
 // This package only exists when using Go compiled with GOEXPERIMENT=boringcrypto.
-
 package fipsonly

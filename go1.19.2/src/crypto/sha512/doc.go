@@ -4,5 +4,4 @@
 // All the hash.Hash implementations returned by this package also
 // implement encoding.BinaryMarshaler and encoding.BinaryUnmarshaler to
 // marshal and unmarshal the internal state of the hash.
-
 package sha512

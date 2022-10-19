@@ -5,5 +5,4 @@
 //
 // Any time the Go+BoringCrypto toolchain is used, the "boringcrypto" build tag
 // is satisfied, so that applications can tag files that use this package.
-
 package boring

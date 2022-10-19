@@ -15,5 +15,4 @@
 // this way, link this package into your program:
 //
 //	import _ "expvar"
-
 package expvar

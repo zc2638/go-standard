@@ -5,5 +5,4 @@
 //	for e := l.Front(); e != nil; e = e.Next() {
 //		// do something with e.Value
 //	}
-
 package list

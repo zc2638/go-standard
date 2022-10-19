@@ -122,5 +122,4 @@
 // To support tools that analyze Go packages, the patterns found in //go:embed lines
 // are available in “go list” output. See the EmbedPatterns, TestEmbedPatterns,
 // and XTestEmbedPatterns fields in the “go help list” output.
-
 package embed

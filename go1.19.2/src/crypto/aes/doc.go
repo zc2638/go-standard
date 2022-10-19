@@ -7,5 +7,4 @@
 // extensions and s390x systems using Message-Security-Assist extensions.
 // On such systems, when the result of NewCipher is passed to cipher.NewGCM,
 // the GHASH operation used by GCM is also constant-time.
-
 package aes

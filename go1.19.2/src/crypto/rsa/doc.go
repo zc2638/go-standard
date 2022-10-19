@@ -16,5 +16,4 @@
 // Decrypter and Signer interfaces from the crypto package.
 //
 // The RSA operations in this package are not implemented using constant-time algorithms.
-
 package rsa

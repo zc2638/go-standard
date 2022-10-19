@@ -9,5 +9,4 @@
 // The TIFF file format uses a similar but incompatible version of the LZW
 // algorithm. See the golang.org/x/image/tiff/lzw package for an
 // implementation.
-
 package lzw

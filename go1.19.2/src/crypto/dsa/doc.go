@@ -7,5 +7,4 @@
 // with 1024-bit moduli (L1024N160 parameters) are cryptographically weak, while
 // bigger keys are not widely supported. Note that FIPS 186-5 no longer approves
 // DSA for signature generation.
-
 package dsa

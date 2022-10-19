@@ -15,5 +15,4 @@
 // high-performance serialization, especially for large data structures,
 // should look at more advanced solutions such as the encoding/gob
 // package or protocol buffers.
-
 package binary

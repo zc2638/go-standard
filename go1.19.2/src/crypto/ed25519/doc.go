@@ -6,5 +6,4 @@
 // representation includes a public key suffix to make multiple signing
 // operations with the same key more efficient. This package refers to the RFC
 // 8032 private key as the “seed”.
-
 package ed25519

@@ -47,5 +47,4 @@
 //	}
 //
 // because the former will succeed if err wraps an *fs.PathError.
-
 package errors

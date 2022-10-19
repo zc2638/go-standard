@@ -76,5 +76,4 @@ in a command-line interface. The methods of FlagSet are
 analogous to the top-level functions for the command-line
 flag set.
 */
-
 package flag

@@ -31,5 +31,4 @@
 // ResetSession is called if implemented. If a connection is never returned to the
 // connection pool but immediately reused, then ResetSession is called prior to
 // reuse but IsValid is not called.
-
 package driver
