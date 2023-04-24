@@ -6,6 +6,7 @@ Go常用规范定义，标准库方法使用示例，请注意这不是Go的中�
 
 ## [Golang 泛型](https://github.com/akutz/go-generics-the-hard-way)
 ## [Golang 常见指令](./docs/instruction.md)
+## [Golang 插件](./docs/plugin.md)
 ## [Uber编码规范](./docs/style.md)
 ## <a href="https://github.com/opentracing-contrib/opentracing-specification-zh/blob/master/specification.md" target="_blank">OpenTracing链路追踪规范</a>
 
